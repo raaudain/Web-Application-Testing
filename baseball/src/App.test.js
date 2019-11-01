@@ -7,6 +7,6 @@ test('renders without crashing', () => {
 });
 
 test("Is 'Score' there", () => {
-  const container = render(<App />);
-  container.getByText("Score")
+  const {getByText} = render(<App />);
+  getByText("Score")
 })
